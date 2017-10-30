@@ -70,7 +70,10 @@ http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/
             queue="flights"
             connector-ref="Active_MQ"
             doc:name="JMS" />
-        <set-property propertyName="#[&quot;Content-Type&quot;]" value="#[&quot;application/json&quot;]" doc:name="Set Content-Type"/>
+        <set-property
+            propertyName="#[&quot;Content-Type&quot;]"
+            value="#[&quot;application/json&quot;]"
+            doc:name="Set Content-Type" />
     </flow>
 
     <flow name="logFlights">
